@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisation des Vacances</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Organisation de la semaine de vacances</h1>
+
+    <form id="activity-form">
+        <input type="text" id="activity-name" placeholder="Nom de l'activité" required>
+        <select id="activity-day">
+            <option value="Lundi">Lundi</option>
+            <option value="Mardi">Mardi</option>
+            <option value="Mercredi">Mercredi</option>
+            <option value="Jeudi">Jeudi</option>
+            <option value="Vendredi">Vendredi</option>
+            <option value="Samedi">Samedi</option>
+            <option value="Dimanche">Dimanche</option>
+        </select>
+        <select id="activity-time">
+            <option value="Matin">Matin</option>
+            <option value="Après-midi">Après-midi</option>
+            <option value="Soir">Soir</option>
+        </select>
+        <button type="submit">Ajouter l'activité</button>
+    </form>
+
+    <table id="schedule">
+        <thead>
+            <tr>
+                <th>Jour</th>
+                <th>Matin</th>
+                <th>Après-midi</th>
+                <th>Soir</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-day="Lundi">
+                <td>Lundi</td>
+                <td class="Matin"></td>
+                <td class="Après-midi"></td>
+                <td class="Soir"></td>
+            </tr>
+            <tr data-day="Mardi">
+                <td>Mardi</td>
+                <td class="Matin"></td>
+                <td class="Après-midi"></td>
+                <td class="Soir"></td>
+            </tr>
+            <tr data-day="Mercredi">
+                <td>Mercredi</td>
+                <td class="Matin"></td>
+                <td class="Après-midi"></td>
+                <td class="Soir"></td>
+            </tr>
+            <tr data-day="Jeudi">
+                <td>Jeudi</td>
+                <td class="Matin"></td>
+                <td class="Après-midi"></td>
+                <td class="Soir"></td>
+            </tr>
+            <tr data-day="Vendredi">
+                <td>Vendredi</td>
+                <td class="Matin"></td>
+                <td class="Après-midi"></td>
+                <td class="Soir"></td>
+            </tr>
+            <tr data-day="Samedi">
+                <td>Samedi</td>
+                <td class="Matin"></td>
+                <td class="Après-midi"></td>
+                <td class="Soir"></td>
+            </tr>
+            <tr data-day="Dimanche">
+                <td>Dimanche</td>
+                <td class="Matin"></td>
+                <td class="Après-midi"></td>
+                <td class="Soir"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
